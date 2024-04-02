@@ -87,7 +87,6 @@ class DorisSession:
         assert fe_servers
         assert database
         assert user
-        assert passwd
         self.fe_servers = fe_servers
         self.database = database
         self.Authorization = base64.b64encode((user + ':' + passwd).encode('utf-8')).decode('utf-8')
